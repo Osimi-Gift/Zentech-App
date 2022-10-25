@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Mini project  </title>
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <style>
+  *{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  body{
+   width: 100%; 
+  font-family: Sans-Serif;
+  }
+  img{
+  width: 100%;  
+  height: 100vh;
+   position: absolute;
+  }
+  button{
+    width: 80%;
+    background-color: #1C3A4D;
+    color: white;
+    position: fixed;
+    bottom:3%;
+    display: grid;
+    justify-content: center;
+    margin: auto;
+    left: 10%;
+    border: 2px solid blur;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 700;
+    font-family: Sans-Serif;
+  }
+  button:hover{
+    transition: 0.5s;
+    background-color: white;
+    color:#1C3A4D ;
+  }
+  </style>
+  <body>
+    <img src="Logo.jpg"alt="image">
+    <button onclick="Home();">Continue</button>
+    
+    <script>
+    function Home(){
+      alert("The following are our terms and conditions which you must strictly follow \n\n 1. You must not use the details of another person to login \n\n 2. You would be arrested if found using this application for fraud \n\n 3. A charge of #5 would be deducted every month for maintenance");
+      var Agree = prompt("  Do you Agree to our terms and conditions?");
+      if(Agree.length === 3){
+      window.location.replace("Home.html ");
+      }
+      else{
+        alert("You wouldn't be allowed to login unless you agree to our privacy policy");
+      }
+    }
+   
+    </script>
+    </body>
+    </html>
